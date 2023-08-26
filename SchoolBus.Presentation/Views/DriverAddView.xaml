@@ -1,0 +1,25 @@
+﻿<Window x:Class="SchoolBus.Presentation.Views.DriverAddView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolBus.Presentation.Views"
+        mc:Ignorable="d"
+        Title="DriverAddView" WindowStartupLocation="CenterScreen" Height="400" Width="600" Background="Beige">
+    <Canvas>
+        <Label FontSize="20" FontWeight="Bold" Content="FirstName" HorizontalAlignment="Center" Canvas.Left="75" VerticalAlignment="Top" Canvas.Top="26"/>
+        <TextBox Text="{Binding NewDriver.FirstName}" Height="30" Width="200" Canvas.Left="75" Canvas.Top="57" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <TextBox Text="{Binding NewDriver.Address}" Height="30" Width="200" Canvas.Left="72" Canvas.Top="211" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <TextBox Text="{Binding NewDriver.License}" Height="30" Width="200" Canvas.Left="329" Canvas.Top="132" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <Label FontSize="20" FontWeight="Bold" Content="LastName" Canvas.Left="72" Canvas.Top="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label FontSize="20" FontWeight="Bold" Content="Lisence" Canvas.Left="324" Canvas.Top="98" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label FontSize="20" FontWeight="Bold" Content="Address" Canvas.Left="81" Canvas.Top="174" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding NewDriver.LastName}" Height="30" Width="200" Canvas.Left="75" Canvas.Top="132" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <Label FontSize="20" FontWeight="Bold" Content="Phone" Canvas.Left="326" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="24"/>
+        <TextBox Text="{Binding NewDriver.Phone}" Height="30" Width="200" Canvas.Left="331" Canvas.Top="58" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+
+        <ComboBox  ItemsSource= "{Binding CarListboxSource}" SelectedItem= "{Binding SelectedCar}" Width= "200" FontSize= "20" Foreground="Gray" Height="30" Canvas.Left="331" Canvas.Top="211" HorizontalAlignment="Center" VerticalAlignment="Top" ></ComboBox >
+
+        <Button Command="{Binding Add_Button}" Background="Black" Foreground="White" Content="Add" FontSize="20" FontWeight="Bold" Width="106" Height="30" Canvas.Left="255" Canvas.Top="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</Window>

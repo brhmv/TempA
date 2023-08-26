@@ -1,0 +1,53 @@
+﻿<Window x:Class="SchoolBus.Presentation.Views.ParentAddView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolBus.Presentation.Views"
+        mc:Ignorable="d"
+        Title="AddParentView" 
+        Height="450" 
+        Width="800"
+        Background="Beige">
+    <!--<Canvas>
+        <Label FontSize="20" FontWeight="Bold" Content="FirstName" HorizontalAlignment="Center" Canvas.Left="48" VerticalAlignment="Top" Canvas.Top="10"/>
+        <TextBox Text="{Binding NewParent.FirstName}" Height="30" Width="200" Canvas.Left="50" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <Label FontSize="20" FontWeight="Bold" Content="LastName" Canvas.Left="47" Canvas.Top="80" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding NewParent.LastName}" Height="30" Width="200" Canvas.Left="50" Canvas.Top="116" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <Label FontSize="20" FontWeight="Bold" Content="Phone" Canvas.Left="49" Canvas.Top="153" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding NewParent.PhoneNumber}" Height="30" Width="200" Canvas.Left="50" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+
+        <Button Command="{Binding Add_Button}" Background="OldLace" Content="Add" FontSize="20" FontWeight="Bold" Width="106" Height="30" Canvas.Left="101" Canvas.Top="235" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>-->
+
+    <Grid>
+        <Grid >
+            <Grid.RowDefinitions >
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions >
+
+
+            <Label Grid.Row="0" FontSize="50" HorizontalAlignment="Center" FontFamily="Elephant">Add Parent</Label>
+            <StackPanel  Grid.Row="1" HorizontalAlignment= "Center" VerticalAlignment="Center">
+                <Label Foreground="Black"   >First Name</Label >
+                <TextBox Text= "{Binding NewParent.FirstName}" FontSize= "20" Width= "450" Foreground="Gray"></TextBox >
+
+                <Label Foreground="Black" >Last Name</Label >
+                <TextBox  Text= "{Binding NewParent.LastName}" FontSize= "20" Width= "450" Foreground="Gray" ></TextBox >
+
+                <Label Foreground="Black" >Phone Number</Label>
+                <TextBox Text = "{Binding NewParent.PhoneNumber}"  FontSize= "20" Width= "450" Foreground="Gray" ></TextBox >
+            </StackPanel>
+
+            <Button Grid.Row= "2"
+                    Content= "Save"
+                	Width= "250"
+                	Background= "Black"
+                	Foreground= "White"
+                    Margin= "2,0"
+                    Command= "{Binding Add_Button}" />
+        </Grid >
+    </Grid>
+</Window>

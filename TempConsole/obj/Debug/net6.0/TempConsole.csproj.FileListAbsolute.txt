@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\BusProject\TempConsole\bin\Debug\net6.0\TempConsole.exe
+C:\Users\user\source\repos\BusProject\TempConsole\bin\Debug\net6.0\TempConsole.deps.json
+C:\Users\user\source\repos\BusProject\TempConsole\bin\Debug\net6.0\TempConsole.runtimeconfig.json
+C:\Users\user\source\repos\BusProject\TempConsole\bin\Debug\net6.0\TempConsole.dll
+C:\Users\user\source\repos\BusProject\TempConsole\bin\Debug\net6.0\TempConsole.pdb
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.AssemblyInfo.cs
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.dll
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\refint\TempConsole.dll
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.pdb
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\TempConsole.genruntimeconfig.cache
+C:\Users\user\source\repos\BusProject\TempConsole\obj\Debug\net6.0\ref\TempConsole.dll

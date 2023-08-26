@@ -1,0 +1,65 @@
+﻿<Application x:Class="SchoolBus.Presentation.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SchoolBus.Presentation.ViewModels"
+             xmlns:view="clr-namespace:SchoolBus.Presentation.Views"
+             xmlns:viewModel="clr-namespace:SchoolBus.Presentation.ViewModels">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <DataTemplate DataType="{x:Type viewModel:MainViewModel}">
+                <view:MainWindow></view:MainWindow>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:CarViewModel}">
+                <view:CarView></view:CarView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:ClassViewModel}">
+                <view:ClassView></view:ClassView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:DriverViewModel}">
+                <view:DriverView></view:DriverView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:ParentViewModel}">
+                <view:ParentView></view:ParentView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:StudentViewModel}">
+                <view:StudentView></view:StudentView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:CreateRideViewModel}">
+                <view:CreateRideView></view:CreateRideView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:RideViewModel}">
+                <view:RideView></view:RideView>
+            </DataTemplate>
+            
+            
+            
+            <DataTemplate DataType="{x:Type viewModel:ClassAddViewModel}">
+                <view:ClassAddView></view:ClassAddView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:ParentAddViewModel}">
+                <view:ParentAddView></view:ParentAddView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:DriverAddViewModel}">
+                <view:DriverAddView></view:DriverAddView>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:StudentAddViewModel}">
+                <view:StudentAddView></view:StudentAddView>
+            </DataTemplate>
+            
+            
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
